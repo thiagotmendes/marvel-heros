@@ -1,0 +1,116 @@
+.main-section
+  display: block
+  position: relative
+  padding-top: $innerSpace
+  padding-bottom: $innerSpace
+  //height: 100%
+  overflow: hidden
+  min-height: 100%
+
+  &__app
+    width: 100%
+    position: relative
+    //overflow: auto
+
+
+    &__left
+      left: 0
+      transition-duration: .7s
+
+      &--active
+        left: -110%
+        transition-duration: .7s
+
+    &__right
+      right: -110%
+      transition-duration: .7s
+      position: absolute !important
+      top: 0 !important
+      height: 400px
+
+      &--active
+        transition-duration: .7s
+        right: 0
+
+  &--gray
+    background-color: #E5E5E5
+
+  &__search
+    margin: 15px 0
+
+  &__search
+    display: block
+    position: relative
+
+    input
+      padding: 10px
+
+  &__grid
+    display: grid
+    grid-template-columns: 33.3%  33.3%  33.3%
+    grid-column-gap: 15px
+
+    &__collum
+      display: flex
+      align-items: center
+      font-size: 13px
+
+      &--series
+        max-height: 127px
+        width: 100%
+        overflow: auto
+
+    &--header
+      background-color: #a8a0a0
+      font-weight: bold
+      text-transform: capitalize
+      margin-bottom: 15px
+      padding-top: 15px
+      padding-bottom: 15px
+
+      div
+        padding-left: 15px
+        padding-right: 15px
+
+    &__box
+      background-color: #FFFFFF
+      border-bottom: #162836 solid 1px
+      margin: 15px 0
+      border-radius: 10px
+      overflow: hidden
+      -webkit-box-shadow: 1px 5px 11px 3px rgba(0,0,0,0.35)
+      box-shadow: 1px 5px 11px 3px rgba(0,0,0,0.35)
+      padding: 10px
+      cursor: pointer
+
+    &__picture
+      width: 33%
+      overflow: hidden
+      margin-right: 10px
+
+  &__character-list
+    //height: 100%
+    //overflow: auto
+
+  &__character-bio
+    display: grid
+
+    &--description
+      grid-template-columns: 1fr 70%
+      grid-column-gap: 15px
+      margin-bottom: $innerSpace
+
+      &--about
+        margin-top: $innerSpace
+        margin-bottom: $innerSpace
+
+  &__header-character
+    display: flex
+    justify-content: space-between
+
+    button
+      cursor: pointer
+      color: black
+      text-decoration: none
+      border: 0
+      background-color: transparent

@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  font-size: 14px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #000; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+header {
+  display: block;
+  position: relative; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+  .container__row-app {
+    display: block;
+    position: relative; }
+
+.img-responsive {
+  max-width: 100%; }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+
+@keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("eot"), url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg"); }
+
+.icon:before {
+  font-family: "icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+  text-decoration: none;
+  text-transform: none; }
+
+.icon-facebook:before {
+  content: "\E001"; }
+
+.icon-gplus:before {
+  content: "\E002"; }
+
+.icon-in:before {
+  content: "\E003"; }
+
+.icon-instagram:before {
+  content: "\E004"; }
+
+.icon-phone:before {
+  content: "\E005"; }
+
+.icon-search-solid:before {
+  content: "\E006"; }
+
+.icon-youtube:before {
+  content: "\E007"; }
+
+.main-header {
+  background: -webkit-linear-gradient(345.96deg, #1D252E 0, #475A70 100%);
+  background: -o-linear-gradient(345.96deg, #1D252E 0, #475A70 100%);
+  background: linear-gradient(104.04deg, #1D252E 0, #475A70 100%);
+  color: white;
+  font-size: 16px; }
+  .main-header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.main-section {
+  display: block;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  min-height: 100%; }
+  .main-section__app {
+    width: 100%;
+    position: relative; }
+    .main-section__app__left {
+      left: 0;
+      -webkit-transition-duration: .7s;
+           -o-transition-duration: .7s;
+              transition-duration: .7s; }
+      .main-section__app__left--active {
+        left: -110%;
+        -webkit-transition-duration: .7s;
+             -o-transition-duration: .7s;
+                transition-duration: .7s; }
+    .main-section__app__right {
+      right: -110%;
+      -webkit-transition-duration: .7s;
+           -o-transition-duration: .7s;
+              transition-duration: .7s;
+      position: absolute !important;
+      top: 0 !important;
+      height: 400px; }
+      .main-section__app__right--active {
+        -webkit-transition-duration: .7s;
+             -o-transition-duration: .7s;
+                transition-duration: .7s;
+        right: 0; }
+  .main-section--gray {
+    background-color: #E5E5E5; }
+  .main-section__search {
+    margin: 15px 0; }
+  .main-section__search {
+    display: block;
+    position: relative; }
+    .main-section__search input {
+      padding: 10px; }
+  .main-section__grid {
+    display: grid;
+    grid-template-columns: 33.3%  33.3%  33.3%;
+    grid-column-gap: 15px; }
+    .main-section__grid__collum {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 13px; }
+      .main-section__grid__collum--series {
+        max-height: 127px;
+        width: 100%;
+        overflow: auto; }
+    .main-section__grid--header {
+      background-color: #a8a0a0;
+      font-weight: bold;
+      text-transform: capitalize;
+      margin-bottom: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      .main-section__grid--header div {
+        padding-left: 15px;
+        padding-right: 15px; }
+    .main-section__grid__box {
+      background-color: #FFFFFF;
+      border-bottom: #162836 solid 1px;
+      margin: 15px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      -webkit-box-shadow: 1px 5px 11px 3px rgba(0, 0, 0, 0.35);
+      box-shadow: 1px 5px 11px 3px rgba(0, 0, 0, 0.35);
+      padding: 10px;
+      cursor: pointer; }
+    .main-section__grid__picture {
+      width: 33%;
+      overflow: hidden;
+      margin-right: 10px; }
+  .main-section__character-bio {
+    display: grid; }
+    .main-section__character-bio--description {
+      grid-template-columns: 1fr 70%;
+      grid-column-gap: 15px;
+      margin-bottom: 50px; }
+      .main-section__character-bio--description--about {
+        margin-top: 50px;
+        margin-bottom: 50px; }
+  .main-section__header-character {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .main-section__header-character button {
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+      border: 0;
+      background-color: transparent; }
